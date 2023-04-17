@@ -68,12 +68,18 @@ body {
 }
 
 
-#scene-04 img{
-    width: 100%;
+#scene-04 .glitch, #scene-04 img{
+    width: 260px;
+    height: 400px;
 }
 
 #scene-04 .glitch__layer {
     background-image: url(../img/Marshall_McLuhan.jpg);
+}
+
+#scene-04 .typerBox {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 #scene-04 .col-12 .typerBox {
