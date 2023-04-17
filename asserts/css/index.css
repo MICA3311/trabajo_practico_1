@@ -13,4 +13,8 @@ html,body {
     font-family: 'VT323', monospace;
     font-size: 25px;
     text-shadow: 0 0 5px rgba(125,225,125,0.5), 0 0 15px rgba(125,250,125,1);
+    width: 80%;
+    margin-left: 10%;
+    height: 60%;
+    margin-top: 20%;
 }
