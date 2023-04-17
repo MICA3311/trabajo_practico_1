@@ -10,18 +10,56 @@
     <script src="./asserts/js/functions.js"></script>
 </head>
 <body>
-    <div id="scene-01">
+    <div id="scene-01" class="scene-focus d-none">
         <div id="scene-01-text">
             Bienvenido
         </div>
     </div>
+    
     <div id="scene-02" class="d-none">
         <canvas id="scene-02-rain"></canvas>
     </div>
 
-    <div id="typerBox" class="d-none">
+    <div id="scene-03" class="d-none">
+        <div id="scene-03-typer-tittle" class="typerBox"></div>
+        <div id="scene-03-typer-body-p1" class="typerBox"></div>
+        <div id="scene-03-typer-body-p2" class="typerBox"></div>
+        <div id="scene-03-typer-body-p3" class="typerBox"></div>
+
+        <div id="scene-03-buttons" class="scene-buttons scene-no-margin row align-items-start d-none">
+            <div class="col">
+                <button type="button" class="btn btn-matrix">Pastilla Azul</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-matrix" onclick="scene04()">Pastilla Roja</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="scene-04" class="scene-no-margin row align-items-start">
+        <!-- Pastilla Roja -->
+        <div class="col-7">
+            <div id="scene-04-typper-tittle" class="typerBox"></div>
+            <div id="scene-04-typper-p1" class="typerBox"></div>
+        </div>
+        <div class="col-5">
+            <div class="glitch">
+                <img src="./asserts/img/Marshall_McLuhan.jpg" alt="">
+                <div class="glitch__layers">
+                    <div class="glitch__layer"></div>
+                    <div class="glitch__layer"></div>
+                    <div class="glitch__layer"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div id="scene-04-typper-p2" class="typerBox"></div>
+            <div id="scene-04-typper-p3" class="typerBox"></div>
+        </div>
     </div>
 </body>
+<link href="./asserts/css/glitch.css" rel="stylesheet">
 <script src="./asserts/js/index.js"></script>
 <script src="asserts/js/matrix.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>

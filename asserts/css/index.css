@@ -20,7 +20,20 @@ body {
     padding: 0;
     margin: 0;
     position: relative;
+    opacity: 0;
+    -webkit-transition: opacity 0.8s ease-in-out;
+    -moz-transition: opacity 0.8s ease-in-out;
+    transition: opacity 0.8s ease-in-out;
 }
+
+.scene-no-margin{
+    margin: 0 !important;
+}
+.scene-focus{
+    opacity: 100% !important;
+}
+
+
 #scene-01-text {
   position: absolute;
   top: calc(50% - 20px);
@@ -39,3 +52,59 @@ body {
   height: 60%;
   margin-top: 20%;
 }
+
+.typerBox {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20%;
+  }
+
+
+
+
+#scene-03 .typerBox{
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+
+#scene-04 img{
+    width: 100%;
+}
+
+#scene-04 .glitch__layer {
+    background-image: url(../img/Marshall_McLuhan.jpg);
+}
+
+#scene-04 .col-12 .typerBox {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+}
+
+
+.scene-buttons{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.scene-buttons .col{
+    text-align: center;
+}
+
+.btn-matrix{
+--bs-btn-color: rgba(125, 225, 125, 0.75);
+--bs-btn-bg: #0f0f0f;
+--bs-btn-border-color: rgba(125, 225, 125, 0.5);
+--bs-btn-hover-color: rgba(125, 225, 125, 0.75);
+--bs-btn-hover-bg: #424649;
+--bs-btn-hover-border-color: rgba(125, 225, 125, 0.5);
+--bs-btn-focus-shadow-rgb: 66,70,73;
+--bs-btn-active-color: rgba(125, 225, 125, 0.75);
+--bs-btn-active-bg: #4d5154;
+--bs-btn-active-border-color: rgba(125, 225, 125, 0.5);
+--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+--bs-btn-disabled-color: rgba(125, 225, 125, 0.75);
+--bs-btn-disabled-bg: #0f0f0f;
+--bs-btn-disabled-border-color: rgba(125, 225, 125, 0.5);
+}
+
