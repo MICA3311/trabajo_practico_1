@@ -140,6 +140,7 @@ const scene04 = () => {
     document.getElementById("scene-04-typper-p1").innerHTML = "";
     document.getElementById("scene-04-typper-p2").innerHTML = "";
     document.getElementById("scene-04-typper-p3").innerHTML = "";
+    document.getElementById("scene-04-buttons").classList.add("d-none");
 
     document.getElementById("scene-05").classList.add("d-none");
     document.getElementById("scene-04").classList.remove("d-none");
