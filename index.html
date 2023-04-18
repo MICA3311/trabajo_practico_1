@@ -25,13 +25,14 @@
         <div id="scene-03-typer-body-p1" class="typerBox"></div>
         <div id="scene-03-typer-body-p2" class="typerBox"></div>
         <div id="scene-03-typer-body-p3" class="typerBox"></div>
+        <div id="scene-03-typer-body-p4" class="typerBox text-center"></div>
 
         <div id="scene-03-buttons" class="scene-buttons scene-no-margin row align-items-start d-none">
             <div class="col">
-                <button type="button" class="btn btn-matrix">Pastilla Azul</button>
+                <button id="scene-03-button-yes" type="button" class="btn btn-matrix" onclick="scene03_option_yes()">Si</button>
             </div>
             <div class="col">
-                <button type="button" class="btn btn-matrix" onclick="scene04()">Pastilla Roja</button>
+                <button id="scene-03-button-no" type="button" class="btn btn-matrix" onclick="scene03_option_no()">No</button>
             </div>
         </div>
     </div>
@@ -57,7 +58,61 @@
             <div id="scene-04-typper-p2" class="typerBox"></div>
             <div id="scene-04-typper-p3" class="typerBox"></div>
         </div>
+
+        <div id="scene-04-typer-p4" class="typerBox text-center d-none">
+            ¿Te arrepientes de tus elecciones?
+        </div>
+        <div id="scene-04-buttons" class="scene-no-margin row align-items-center d-none">
+            <div class="col text-center">
+                <button id="scene-04-button-yes" type="button" class="btn btn-matrix" onclick="scene04_option_yes()">si</button>
+            </div>
+            <div class="col text-center">
+                <button id="scene-04-button-no" type="button" class="btn btn-matrix" onclick="scene04_option_no()">no</button>
+            </div>
+        </div>
     </div>
+
+
+    <div id="scene-05" class="scene-no-margin row align-items-center d-none">
+        <!-- Pastilla Roja y Azul-->
+        <div class="col">
+            <button id="scene-05-button-red" type="button" class="btn btn-matrix-red" onclick="scene04()">Pastilla</button>
+        </div>
+        <div class="col">
+            <button id="scene-05-button-blue" type="button" class="btn btn-matrix-blue" onclick="scene04_blue_pill()">Pastilla</button>
+        </div>
+    </div>
+
+
+    <div id="scene-06" class="scene-focus d-none">
+        <div id="scene-06-p1" class="text-center">
+        </div>
+        <div id="scene-06-buttons" class="scene-no-margin row align-items-center d-none">
+            <div class="col text-center">
+                <button id="scene-06-button-yes" type="button" class="btn btn-matrix" onclick="scene06_option_yes()">si</button>
+            </div>
+            <div class="col text-center">
+                <button id="scene-06-button-no" type="button" class="btn btn-matrix" onclick="scene06_option_no()">no</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="scene-07" class="d-none">
+        <div class="row">
+            <div class="col">
+                <video id="scene-07-video" src="./asserts/video/Never Gonna Give You Up.mp4"></video>
+            </div>
+            <div id="scene-07-text" class="col">
+                <p class="text-center">Parece que has estado viviendo dos vidas. </p>
+                <p class="text-center">Una de esas vidas tiene futuro, y la otra no.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
 </body>
 <link href="./asserts/css/glitch.css" rel="stylesheet">
 <script src="./asserts/js/index.js"></script>

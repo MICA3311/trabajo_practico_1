@@ -36,4 +36,4 @@ function draw() {
 }
 
 // Loop the animation
-setInterval(draw, 33);
+setInterval(draw, 36);
