@@ -129,50 +129,57 @@ const scene03_option_no = () => {
 };
 
 const scene03_option_yes = () =>{
-    document.getElementById("scene-04").classList.add("d-none");
+    document.getElementById("scene-03").classList.add("d-none");
     document.getElementById("scene-05").classList.remove("d-none");
 }
 
 const scene04 = () => {
-  document.getElementById("scene-05").classList.add("d-none");
-  document.getElementById("scene-04").classList.remove("d-none");
-  scene04_title();
+
+    // Reseteando textos
+    document.getElementById("scene-04-typper-tittle").innerHTML = "";
+    document.getElementById("scene-04-typper-p1").innerHTML = "";
+    document.getElementById("scene-04-typper-p2").innerHTML = "";
+    document.getElementById("scene-04-typper-p3").innerHTML = "";
+
+    document.getElementById("scene-05").classList.add("d-none");
+    document.getElementById("scene-04").classList.remove("d-none");
+    scene04_title();
 };
 const scene04_title = () => {
-  typerCallback = scene04_paragraph1;
-  // Titulo
-  typerDOM = "scene-04-typper-tittle";
-  typerText = "Marshall McLuhan";
-  typerReset();
-  typer();
+    typerCallback = scene04_paragraph1;
+    // Titulo
+    typerDOM = "scene-04-typper-tittle";
+    typerText = "Marshall McLuhan";
+    typerReset();
+    typer();
 };
 
 const scene04_paragraph1 = () => {
-  typerCallback = scene04_paragraph2;
-  // Parrafo 1
-  typerDOM = "scene-04-typper-p1";
-  typerText =
-    "fue un filósofo, erudito, sociólogo de la comunicación y profesor de literatura canadiense.";
-  typerReset();
-  typer();
+    typerCallback = scene04_paragraph2;
+    // Parrafo 1
+    typerDOM = "scene-04-typper-p1";
+    typerText =
+        "fue un filósofo, erudito, sociólogo de la comunicación y profesor de literatura canadiense.";
+    typerReset();
+    typer();
 };
 const scene04_paragraph2 = () => {
-  typerCallback = scene04_paragraph3;
-  // Parrafo 2
-  typerDOM = "scene-04-typper-p2";
-  typerText =
-    "Hacia finales de la década de 1960 y principios de los años 1970, McLuhan acuñó el término «aldea global» para describir la interconexión humana a escala global generada por los medios electrónicos de comunicación planteó que todos los cambios sociales son el efecto que las nuevas tecnologías ejercen sobre el orden de nuestras vidas sensoriales. Su concepto de aldea global ha dado origen al de globalización, término que parece definir la actual sociedad de la información.";
-  typerReset();
-  typer();
+    typerCallback = scene04_paragraph3;
+    // Parrafo 2
+    typerDOM = "scene-04-typper-p2";
+    typerText =
+        "Hacia finales de la década de 1960 y principios de los años 1970, McLuhan acuñó el término «aldea global» para describir la interconexión humana a escala global generada por los medios electrónicos de comunicación planteó que todos los cambios sociales son el efecto que las nuevas tecnologías ejercen sobre el orden de nuestras vidas sensoriales. Su concepto de aldea global ha dado origen al de globalización, término que parece definir la actual sociedad de la información.";
+    typerReset();
+    typer();
 };
 const scene04_paragraph3 = () => {
-  typerCallback = scene04_paragraph4;
-  // Parrafo 3
-  typerDOM = "scene-04-typper-p3";
-  typerText =
-    "“El medio es el mensaje” (en inglés “The medium is the message”) es una frase acuñada por Marshall McLuhan que significa que la forma de un medio se incrusta en cualquier mensaje que transmita o transporte, creando una relación simbiótica en la que el medio influye en cómo se percibe el mensaje.";
-  typerReset();
-  typer();
+    typerCallback = scene04_paragraph4;
+    // Parrafo 3
+    typerDOM = "scene-04-typper-p3";
+    typerText =
+        "“El medio es el mensaje” (en inglés “The medium is the message”) es una frase acuñada por Marshall McLuhan que significa que la forma de un medio se incrusta en cualquier mensaje que transmita o transporte, creando una relación simbiótica en la que el medio influye en cómo se percibe el mensaje.";
+    typerReset();
+    typer();
 };
 
 const scene04_paragraph4 = () =>{
@@ -222,6 +229,7 @@ const scene06_buttons = () =>{
 const scene06_option_yes = ()=>{
     document.getElementById("scene-06").classList.add("d-none");
     document.getElementById("scene-01").classList.remove("d-none");
+    document.getElementById("scene-01").classList.add("scene-focus");
 }
 
 const scene06_option_no = () =>{
