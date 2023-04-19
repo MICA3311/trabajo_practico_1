@@ -233,10 +233,11 @@ const scene06_buttons = () =>{
 }
 
 const scene06_option_yes = ()=>{
-    document.getElementById("scene-06").classList.add("d-none");
-    document.getElementById("scene-01").classList.remove("d-none");
-    document.getElementById("scene-01").classList.add("scene-focus");
-    scene01();
+    // document.getElementById("scene-06").classList.add("d-none");
+    // document.getElementById("scene-01").classList.remove("d-none");
+    // document.getElementById("scene-01").classList.add("scene-focus");
+    // scene01();
+    window.location.href = 'https://mica3311.github.io/trabajo_practico_1/'
 }
 
 const scene06_option_no = () =>{
