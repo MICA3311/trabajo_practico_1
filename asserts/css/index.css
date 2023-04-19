@@ -25,7 +25,6 @@ body {
     -moz-transition: opacity 0.8s ease-in-out;
     transition: opacity 0.8s ease-in-out;
 }
-
 .scene-no-margin{
     margin: 0 !important;
 }
@@ -33,11 +32,16 @@ body {
     opacity: 100% !important;
 }
 
+#scene-intro-video{
+    height: 100%;
+    width: 100%;
+}
 
 #scene-01-text {
   position: absolute;
+  width: 300px;
   top: calc(50% - 20px);
-  left: calc(50% - 50px);
+  left: calc(50% - 150px);
 }
 
 #scene-02-rain{
@@ -56,7 +60,7 @@ body {
 .typerBox {
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 20%;
+    padding-top: 8%;
   }
 
 
@@ -68,13 +72,9 @@ body {
 }
 
 
-#scene-04 .glitch, #scene-04 img{
-    width: 260px;
+#scene-04 img, #scene-08 img{
+    width: 300px;
     height: 400px;
-}
-
-#scene-04 .glitch__layer {
-    background-image: url(../img/Marshall_McLuhan.jpg);
 }
 
 #scene-04 .typerBox {
@@ -135,6 +135,12 @@ body {
     padding-left: 10px;
     padding-right: 20px;
 }
+
+
+#scene-09 .typerBox, #scene-10 .typerBox, #scene-11 .typerBox {
+    padding-top: 3%;
+}
+
 
 .btn-matrix{
 --bs-btn-color: rgba(125, 225, 125, 0.75);

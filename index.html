@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trabajo practico</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link href="./asserts/css/index.css" rel="stylesheet">
     <script src="./asserts/js/functions.js"></script>
 </head>
-<body>
+<body onload="scene01()">
     <div id="scene-01" class="scene-focus">
-        <div id="scene-01-text">
+        <div id="scene-01-text" class="text-center">
             Bienvenido
         </div>
     </div>
@@ -45,14 +45,7 @@
             <div id="scene-04-typper-p1" class="typerBox"></div>
         </div>
         <div class="col-5">
-            <div class="glitch">
-                <img src="./asserts/img/Marshall_McLuhan.jpg" alt="">
-                <div class="glitch__layers">
-                    <div class="glitch__layer"></div>
-                    <div class="glitch__layer"></div>
-                    <div class="glitch__layer"></div>
-                </div>
-            </div>
+            <img src="./asserts/img/persona_1.gif" alt="">
         </div>
         <div class="col-12">
             <div id="scene-04-typper-p2" class="typerBox"></div>
@@ -62,7 +55,7 @@
         <div id="scene-04-typer-p4" class="typerBox text-center d-none">
             ¿Te arrepientes de tus elecciones?
         </div>
-        <div id="scene-04-buttons" class="scene-no-margin row align-items-center d-none">
+        <div id="scene-04-buttons" class="scene-buttons scene-no-margin row align-items-center d-none">
             <div class="col text-center">
                 <button id="scene-04-button-yes" type="button" class="btn btn-matrix" onclick="scene04_option_yes()">si</button>
             </div>
@@ -79,7 +72,7 @@
             <button id="scene-05-button-red" type="button" class="btn btn-matrix-red" onclick="scene04()">Pastilla</button>
         </div>
         <div class="col">
-            <button id="scene-05-button-blue" type="button" class="btn btn-matrix-blue" onclick="scene04_blue_pill()">Pastilla</button>
+            <button id="scene-05-button-blue" type="button" class="btn btn-matrix-blue" onclick="scene08()">Pastilla</button>
         </div>
     </div>
 
@@ -87,7 +80,7 @@
     <div id="scene-06" class="scene-focus d-none">
         <div id="scene-06-p1" class="text-center">
         </div>
-        <div id="scene-06-buttons" class="scene-no-margin row align-items-center d-none">
+        <div id="scene-06-buttons" class="scene-buttons scene-no-margin row align-items-center d-none">
             <div class="col text-center">
                 <button id="scene-06-button-yes" type="button" class="btn btn-matrix" onclick="scene06_option_yes()">si</button>
             </div>
@@ -101,21 +94,92 @@
     <div id="scene-07" class="d-none">
         <div class="row">
             <div class="col">
-                <video id="scene-07-video" src="./asserts/video/Never Gonna Give You Up.mp4"></video>
+                <video id="scene-07-video" src="./asserts/video/Never Gonna Give You Up.mp4" controls></video>
             </div>
             <div id="scene-07-text" class="col">
                 <p class="text-center">Parece que has estado viviendo dos vidas. </p>
                 <p class="text-center">Una de esas vidas tiene futuro, y la otra no.</p>
+                <br>
+                <p>
+                    <a href="https://mica3311.github.io/trabajo_practico_1/" type="button" class="btn btn-matrix"> Regresamos <strong>?</strong></a>
+                </p>
+
             </div>
         </div>
     </div>
 
 
 
+    <div id="scene-08" class="scene-no-margin row align-items-start d-none">
+        <!-- Pastilla Azul -->
+        <div class="col-7">
+            <div id="scene-08-typper-tittle" class="typerBox"></div>
+            <div id="scene-08-typper-p1" class="typerBox"></div>
+        </div>
+        <div class="col-5">
+            <img src="./asserts/img/persona_2.gif" alt="">
+        </div>
+        <div class="col-12">
+            <div id="scene-08-typper-p2" class="typerBox"></div>
+            <div id="scene-08-typper-p3" class="typerBox"></div>
+        </div>
+    
+        <div id="scene-08-typer-p4" class="typerBox text-center d-none">
+            ¿Te gustaria realmente saber lo que es?
+        </div>
+        <div id="scene-08-buttons" class="scene-buttons scene-no-margin row align-items-center d-none">
+            <div class="col text-center">
+                <button id="scene-08-button-yes" type="button" class="btn btn-matrix" onclick="scene08_option_yes()">si</button>
+            </div>
+            <div class="col text-center">
+                <button id="scene-08-button-no" type="button" class="btn btn-matrix" onclick="scene08_option_no()">no</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="scene-09" class="d-none">
+        <div id="scene-09-typer-tittle" class="typerBox"></div>
+        <div id="scene-09-typer-body-p1" class="typerBox"></div>
+        <div id="scene-09-typer-body-p2" class="typerBox"></div>
+        <div id="scene-09-typer-body-p3" class="typerBox"></div>
+        <div id="scene-09-typer-body-p4" class="typerBox"></div>
+        <div id="scene-09-typer-body-p5" class="typerBox"></div>
+    
+        <div id="scene-09-buttons" class="scene-buttons scene-no-margin row align-items-start d-none">
+            <div class="col">
+                <button id="scene-09-button-no" type="button" class="btn btn-matrix" onclick="scene10()">Continuar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="scene-10" class="d-none">
+        <div id="scene-10-typer-tittle" class="typerBox"></div>
+        <div id="scene-10-typer-body-p1" class="typerBox"></div>
+        <div id="scene-10-typer-body-p2" class="typerBox"></div>
+    
+        <div id="scene-10-buttons" class="scene-buttons scene-no-margin row align-items-start d-none">
+            <div class="col">
+                <button id="scene-10-button-no" type="button" class="btn btn-matrix" onclick="scene11()">Seguir</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="scene-11" class="d-none">
+        <div id="scene-11-typer-tittle" class="typerBox"></div>
+        <div id="scene-11-typer-body-p1" class="typerBox"></div>
+    
+        <div id="scene-11-buttons" class="scene-buttons scene-no-margin row align-items-start d-none">
+            <div class="col">
+                <button id="scene-11-button-no" type="button" class="btn btn-matrix" onclick="scene11_end()">Seguir</button>
+            </div>
+        </div>
+    </div>
+
 
 </body>
-<link href="./asserts/css/glitch.css" rel="stylesheet">
 <script src="./asserts/js/index.js"></script>
 <script src="asserts/js/matrix.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </html>
